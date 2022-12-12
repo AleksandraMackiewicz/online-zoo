@@ -36,7 +36,8 @@ body {
   }
   
 
-  
+  h1 {margin:0;padding:0;}
+h1 {font-size:100%;font-weight:normal;}
 
 h1 a { padding: 3px 5px; vertical-align: middle;}
 
@@ -158,6 +159,7 @@ cursor: pointer;
     text-align: center;
 
     color: #FFFFFF;
+    position: relative;
 
     
    
@@ -176,9 +178,10 @@ cursor: pointer;
 
   }
   .header_logo img {
-    position: relative;
-    left: 12px;
-    bottom: -25px;
+    position: absolute;
+    left: 10;
+    left: 10%;
+    bottom: 10%;
   }
   .header_designed {
     margin-right: 0;
@@ -239,7 +242,7 @@ line-height: 140%;
     position: relative;
     width: 42%;
     height: 64%;
-    left: 33%;
+    left: 24%;
     top: 0%;
     background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
     border-radius: 50%;
@@ -248,8 +251,8 @@ line-height: 140%;
     .writting {
 
       position: relative;
-      left: 34%;
-      top: -61%;
+      left: 24%;
+      top: -53%;
       width: 500.31px;
       height: 400px;
       font-family: "Roboto";
@@ -408,6 +411,10 @@ color: #333B41;
   .card1 {
     border-radius: 2%;
 border: 1px solid orange;
+  }
+
+  .card1 a:hover {
+    opacity: 0.5;
   }
 
   .card_grid1 {
@@ -980,6 +987,8 @@ color: #FFFFFF;
   
 }
 
+
+
 .cont-radio-don input {
   width: 15px;
   height: 15px;
@@ -1405,8 +1414,15 @@ width: 29%;
 }
 /* *****************************640px ************************************** */
 @media screen and (max-width: 640px) {
+
+  .header_wrapper {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+  }
   .panda_section_wrapper {
     height: 25vh; 
+    
   }
 
   .panda_circle {
